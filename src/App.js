@@ -35,21 +35,21 @@ export default App
 //   const name="vanathi"
 //   return(
 //     <div>
-      {/* <h1 style={{color:"red", backgroundColor:"yellow"}}>hello</h1>
+      /* <h1 style={{color:"red", backgroundColor:"yellow"}}>hello</h1>
       <p style={{color:"rebeccapurple"}}>hello hai {name}</p>
       <Vanathi name1="javascript"/>
       <Usestate/>
       <Useeffect/>
-      <div></div> */}
-      {/* <Usecallback/> */}
-      {/* <UseEffect/> */}
-      {/* <Usememo/> */}
-      {/* <Lists/> */}
-    {/* </div>
+      <div></div> */
+      /* <Usecallback/> */
+      /* <UseEffect/> */
+      /* <Usememo/> */
+      /* <Lists/> */
+    /* </div>
     
   )
 }
-export default App */}
+export default App */
 
 //component - component
 
