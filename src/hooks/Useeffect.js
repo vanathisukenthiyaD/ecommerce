@@ -1,0 +1,14 @@
+import React, { useEffect } from 'react'
+
+const Useeffect = () => {
+    Useeffect(()=>{
+        fetch("https://jsonplaceholder.typicode.com/users").then((res)=>res.json()).then((data)=>console.log(data))
+    })
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default Useeffect
