@@ -1,0 +1,14 @@
+.home{
+    background-image: url(../images/home.jpg);
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    color: white;
+    text-align: center;
+}
+
+.home h1 a{
+    color: white;
+    text-decoration: none;
+}
