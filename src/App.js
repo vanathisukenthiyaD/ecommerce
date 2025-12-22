@@ -10,6 +10,7 @@ import Foot from "./header/Foot.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Product from "./midconten/Product.js";
+import AdminProducts from "./midconten/Adminpro.js";
 
 import "./App.css";
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/search" element={<Search/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/product" element={<Product/>}/>
+        <Routes path="/adminproducts" element={<AdminProducts/>}/>
       </Routes>
       <Foot/>
       </BrowserRouter>

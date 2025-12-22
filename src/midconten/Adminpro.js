@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 const AdminProducts = () => {
   const [products, setProducts] = useState([
     { id: 1, title: "Gold", product: "Ring", price: 2500 },
