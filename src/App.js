@@ -11,7 +11,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Product from "./midconten/Product.js";
 import AdminPro from "./midconten/Adminpro.js";
-
 import "./App.css";
 
 
