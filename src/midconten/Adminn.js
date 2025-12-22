@@ -1,21 +1,32 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import "./adminn.css";
+import { useState } from "react";
+import Sidebar from "./Sidebar";
+import Dashboard from "./Dashboard";
 
-const Admin = () => {
-    return (    
-        <div className="admin-container">
-            <nav className="admin-sidebar">
-                 <Link to="/admin/dashboard">Dashboard</Link>
-                <Link to="/admin/gold">Gold</Link>
-                <Link to="/admin/diamond">Diamond</Link>
-                <Link to="/admin/platinum">Platinum</Link>
-               <Link to="/admin/silver">Silver</Link>
-            </nav>  
-            <div className="admin-content">
-              <Outlet/>
-            </div> 
+export default function AdminDashboard() {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [page, setPage] = useState("");
+
+  return (
+    <div className="dashboard">
+
+      {/* TOP BAR */}
+      <div className="topbar">
+        <h2>Dashboard</h2>
+
+        {/* ADMIN ICON */}
+        <div className="admin-icon" onClick={() => setShowSidebar(!showSidebar)}>
+          Admin ⬇
         </div>
-    );
-}           
-export default Admin;
+      </div>
+
+      {/* SIDEBAR ONLY WHEN CLICK */}
+      {showSidebar && <Sidebar setPage={setPage} />}
+
+      {/* CONTENT */}
+      <div className="content">
+        {page === "jewellery" && <Jewellery />}
+      </div>
+
+    </div>
+  );
+}
