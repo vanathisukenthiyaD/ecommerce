@@ -7,12 +7,6 @@ import Fav from "./midconten/Fav.js";
 import Search from "./midconten/Search.js";
 import Cart from "./midconten/Cart.js"
 import Foot from "./header/Foot.js";
-import Admin from "./midconten/Adminn.js";
-import Dashboard from "./midconten/Dashboard.js";
-import Gold from "./midconten/Gold.js";
-import Diamond from "./midconten/Diamond.js";
-import Platinum from "./midconten/Platinum.js";
-import Silver from "./midconten/Silver.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Product from "./midconten/Product.js";
