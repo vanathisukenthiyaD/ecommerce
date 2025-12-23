@@ -1,5 +1,4 @@
 import React from 'react'
-import './adminpro.css'
 import Adminpro from './Adminpro'
 
 const Jewels = () => {
@@ -7,9 +6,8 @@ const Jewels = () => {
     <div>
         <section>
           <Adminpro/>
-
-          <section className='tbb'>
-            {/* <button>Add+</button> */}
+     <section className='tbb'>
+            <button>Add+</button>
             <table className='table'>
               <thead>
                 <tr>

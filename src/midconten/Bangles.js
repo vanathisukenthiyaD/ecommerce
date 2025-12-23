@@ -1,5 +1,6 @@
 import React from 'react'
-import Adminpro from './Adminpro'
+import Adminpro from './Adminpro'  
+
 
 const Bangles = () => {
   return (
