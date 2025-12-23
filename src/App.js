@@ -12,6 +12,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Product from "./midconten/Product.js";
 import AdminPro from "./midconten/Adminpro.js";
 import "./App.css";
+import Jewels from "./midconten/Jewels.js";
+import Bangles from "./midconten/Bangles.js";
 
 
 
@@ -27,9 +29,11 @@ const App = () => {
         <Route path="/search" element={<Search/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/product" element={<Product/>}/>
-        <Route path="/adminpro" element={<AdminPro/>}/>
+        <Route path="/admin" element={<AdminPro/>}/>
+        <Route path="/jewels" element={<Jewels/>}/>
+        <Route path="/bangles" element={<Bangles/>}/>
       </Routes>
-      <Foot/>
+      {/* <Foot/> */}
       </BrowserRouter>
     </div>
   )

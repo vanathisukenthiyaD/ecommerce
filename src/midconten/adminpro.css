@@ -1,67 +1,19 @@
-.admin-content {
-  padding: 20px;
-  background: #f5f5f5;
-  flex: 1;
-}
-
-/* Top Add Button */
-.top-bar {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 15px;
-}
-
-.add-btn {
-  background: #0071dc;
+.admin{
+  background-color: #0a1a2f;
+  width: 250px;
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
+  padding-top: 100px;
   color: white;
-  border: none;
-  padding: 8px 15px;
-  cursor: pointer;
 }
 
-/* Table */
-.admin-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
+.admin ul li{
+  list-style: none;
+  font-size: 20px;
+  padding-top: 20px;
 }
-
-.admin-table th,
-.admin-table td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
-
-.admin-table th {
-  background: #eee;
-}
-
-/* Action buttons */
-.edit-btn {
-  background: #4caf50;
-  color: white;
-  border: none;
-  padding: 5px 8px;
-  margin-right: 5px;
-}
-
-.delete-btn {
-  background: #f44336;
-  color: white;
-  border: none;
-  padding: 5px 8px;
-}
-
-/* Bottom Submit Button */
-.bottom-bar {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.submit-btn {
-  background: black;
-  color: white;
-  border: none;
-  padding: 10px 30px;
+.tbb{
+  margin-left: 270px;
+  padding-top: 150px;
 }

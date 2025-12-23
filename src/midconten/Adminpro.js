@@ -1,57 +1,23 @@
-import { useState } from "react";
-import "./adminpro.css";
+import React from 'react'
+import './adminpro.css'
+import { Link } from 'react-router-dom'
 
 const Adminpro = () => {
-  const [products, setProducts] = useState([
-    { id: 1, title: "Gold", product: "Ring", price: 2500 },
-    { id: 2, title: "Diamond", product: "Necklace", price: 5000 }
-  ]);
-
-  const handleDelete = (id) => {
-    setProducts(products.filter(item => item.id !== id));
-  };
-
   return (
-    <div className="admin-content">
-
-      {/* TOP ADD BUTTON */}
-      <div className="top-bar">
-        <button className="add-btn">+ Add Item</button>
-      </div>
-
-      {/* TABLE */}
-      <table className="admin-table">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {products.map((item) => (
-            <tr key={item.id}>
-              <td>{item.title}</td>
-              <td>{item.product}</td>
-              <td>₹{item.price}</td>
-              <td>
-                
-                <button className="delete-btn" onClick={() => handleDelete(item.id)}>Delete</button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-
-      {/* SUBMIT BUTTON */}
-      <div className="bottom-bar">
-        <button className="submit-btn">Submit</button>
-      </div>
-
+    <div>
+      <section className='admin'>
+        <h4><Link to="/admin">Admin Product Page</Link></h4>
+        <div className="admin-product-list">
+          <ul>
+            <li><Link to="/jewels">Jewels</Link></li>
+            <li><Link to="/bangles">Bangles</Link></li>
+            <li>Rings</li>
+            <li>Necklaces</li>
+          </ul>
+          </div>
+      </section>
     </div>
-  );
-};
+  )
+}
 
-export default Adminpro;
+export default Adminpro
