@@ -6,7 +6,7 @@ const Adminpro = () => {
   return (
     <div>
       <section className='admin'>
-        <h4><Link to="/admin">Admin Product Page</Link></h4>
+     <h4><Link to="/admin">Admin Product Page</Link></h4>
         <div className="admin-product-list">
           <ul>
             <li><Link to="/jewels">Jewels</Link></li>

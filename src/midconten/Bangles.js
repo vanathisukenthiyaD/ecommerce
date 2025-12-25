@@ -1,6 +1,8 @@
 import React from 'react'
 import Adminpro from './Adminpro'  
-import './jewels.css'
+import './jewels.css' 
+import { Link } from 'react-router-dom'
+ 
 
 const Bangles = () => {
   return (
@@ -8,7 +10,11 @@ const Bangles = () => {
    <section>
     <Adminpro/>
     <section className='tbb'>
+
+         <Link to="/Addpro">
             <button>Add+</button>
+          </Link>
+
             <table className='table'>
               <thead>
                 <tr>

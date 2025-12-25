@@ -13,6 +13,7 @@ import AdminPro from "./midconten/Adminpro.js";
 import "./App.css";
 import Jewels from "./midconten/Jewels.js";
 import Bangles from "./midconten/Bangles.js";
+import Addpro from "./midconten/Addpro.js"; 
 import Foot from "./header/Foot.js";
 
 
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/admin" element={<AdminPro/>}/>
         <Route path="/jewels" element={<Jewels/>}/>
         <Route path="/bangles" element={<Bangles/>}/>
+        <Route path="/Addpro" element={<Addpro/>}/>
       </Routes>
       {/* <Foot/> */}
       </BrowserRouter>

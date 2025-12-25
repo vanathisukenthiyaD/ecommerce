@@ -1,13 +1,18 @@
 import React from 'react'
 import Adminpro from './Adminpro'
 import './jewels.css'
+import { Link } from 'react-router-dom'
+
 const Jewels = () => {
   return (
     <div>
         <section>
           <Adminpro/>
      <section className='tbb'>
+          <Link to="/Addpro">
             <button>Add+</button>
+          </Link>
+
             <table className='table'>
               <thead>
                 <tr>
