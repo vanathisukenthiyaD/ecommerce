@@ -6,7 +6,6 @@ import Head from "./header/Head";
 import Fav from "./midconten/Fav.js";
 import Search from "./midconten/Search.js";
 import Cart from "./midconten/Cart.js"
-import Foot from "./header/Foot.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Product from "./midconten/Product.js";
@@ -14,6 +13,7 @@ import AdminPro from "./midconten/Adminpro.js";
 import "./App.css";
 import Jewels from "./midconten/Jewels.js";
 import Bangles from "./midconten/Bangles.js";
+import Foot from "./header/Foot.js";
 
 
 

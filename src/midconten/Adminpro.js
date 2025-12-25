@@ -19,5 +19,4 @@ const Adminpro = () => {
     </div>
   )
 }
-
 export default Adminpro

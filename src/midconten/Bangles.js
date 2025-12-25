@@ -1,6 +1,6 @@
 import React from 'react'
 import Adminpro from './Adminpro'  
-
+import './jewels.css'
 
 const Bangles = () => {
   return (
