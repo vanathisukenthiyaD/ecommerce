@@ -15,6 +15,7 @@ import Jewels from "./midconten/Jewels.js";
 import Bangles from "./midconten/Bangles.js";
 import Addpro from "./midconten/Addpro.js"; 
 import Foot from "./header/Foot.js";
+import Banglefor from "./midconten/Banglefor.js";
 
 
 
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/jewels" element={<Jewels/>}/>
         <Route path="/bangles" element={<Bangles/>}/>
         <Route path="/Addpro" element={<Addpro/>}/>
+        <Route path="/bangleform" element={<Banglefor/>}/>
       </Routes>
       {/* <Foot/> */}
       </BrowserRouter>

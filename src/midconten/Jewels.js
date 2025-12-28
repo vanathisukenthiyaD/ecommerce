@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Adminpro from './Adminpro'
 import './jewels.css'
 import { Link } from 'react-router-dom'
 
 const Jewels = () => {
+  const[jewels, setJewels] = useState([])
+
+  useEffect(()=>{
+    fetch("http://localhost:5000/getproduct").then((res)=>res.json()).then((data)=>{
+      setJewels(data)
+    })
+  })
+
+  const deleteProduct = (id)=>{
+    fetch(`http://localhost:5000/getproduct/${id}`,{
+      method:"DELETE"
+    }).then((res)=>res.json()).then((data)=>{
+      alert("Product deleted successfully")
+      setJewels((prevdata)=>prevdata.filter((item)=>item._id !== id))
+    })
+  }
   return (
     <div>
         <section>
@@ -16,13 +32,24 @@ const Jewels = () => {
             <table className='table'>
               <thead>
                 <tr>
-                  <th>Product ID</th> 
-                  <th>Product Name</th>
+                  <th>Product Name</th> 
+                  <th>Product Image</th>
                   <th>Price</th>
-                  <th>Stock</th>
+                  <th>Description</th>
+                  <th>Action</th>
                 </tr>
-              </thead>
-              
+              </thead> 
+              <tbody>
+                {jewels.map((item)=>(
+                  <tr key={item._id}>
+                    <td>{item.title}</td>
+                    <td><img src={item.image} alt='' width={100}/></td>
+                    <td>{item.price}</td>
+                    <td>{item.description}</td>
+                    <td><button>Edit</button>  <button onClick={()=>deleteProduct(item._id)}>Delete</button></td>
+                  </tr>
+                ))}
+                </tbody>       
             </table>
           </section>
         </section>
