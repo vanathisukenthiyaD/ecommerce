@@ -1,0 +1,31 @@
+.admin{
+  background-color: #0a1a2f;
+  width: 250px;
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
+  padding-top: 100px;
+  color: white;
+}
+.admin ul li{
+  list-style: none;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.admin ul li a{
+  color: white;
+  text-decoration: none;
+}
+.admin ul li a:hover{
+  color:#f5c518;
+  text-decoration: underline;
+}
+.admin h4 a{
+  color: white;
+  text-decoration: none;
+  padding-left: 8px;
+}
+.admin h4 a:hover{
+  color:#f5c518;
+  text-decoration: underline;
+}
